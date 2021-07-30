@@ -1,0 +1,15 @@
+.wrapper {
+    width: 100% !important;
+    left: 0;
+    right: 0;
+  }
+
+  table {
+    width: 50%;
+  }
+  
+  
+  td, th {
+    width: 15%;
+  }
+  

@@ -1,0 +1,25 @@
+<div class="container">
+    <br>
+    <h2>Distinct Department and No of employees</h2>
+    <div>
+        <div class="wrapper">
+            <table class="mat-elevation-z8" mat-table [dataSource]="dataSource">
+                <ng-container matColumnDef="department">
+                    <th mat-header-cell *matHeaderCellDef class='mt-header'> Department</th>
+                    <td mat-cell *matCellDef="let element"> {{element.department}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="count">
+                    <th mat-header-cell *matHeaderCellDef class='mt-header'>Count</th>
+                    <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef=" displayedColumns">
+                </tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+        </div>
+    </div>
+</div>
